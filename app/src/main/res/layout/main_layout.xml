@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto" android:below="@id/title" 百分比布局 -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+            <include layout="@layout/title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_weight="9">
+            <androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignWithParentIfMissing="true"
+                android:background="#ffffff"
+                >
+                <TextView
+                    app:layout_widthPercent="100%"
+                    app:layout_heightPercent="40%"
+                    android:background="#FFFFFF"
+                    android:id="@+id/input"
+                    android:textSize="30dp"
+                    android:textColor="#4b214b"
+                    android:typeface="monospace"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/Button_C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="25%"
+                    app:layout_heightPercent="12%"
+                    android:layout_below="@id/input"
+                    android:background="@drawable/button_shape2"
+                    android:textSize="30dp"
+                    android:textColor="#4b214b"
+                    android:typeface="monospace"
+                    android:text="@string/bt1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="25%"
+                    app:layout_heightPercent="12%"
+                    android:layout_below="@id/input"
+                    android:layout_toRightOf="@id/Button_C"
+                    android:id="@+id/Button_div"
+                    android:background="@drawable/button_shape2"
+                    android:textSize="30dp"
+                    android:textColor="#4b214b"
+                    android:typeface="monospace"
+                    android:text="@string/bt2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="25%"
+                    app:layout_heightPercent="12%"
+                    android:id="@+id/Button_mul"
+                    android:layout_below="@id/input"
+                    android:layout_toRightOf="@id/Button_div"
+                    android:background="@drawable/button_shape2"
+                    android:textSize="30dp"
+                    android:textColor="#4b214b"
+                    android:typeface="monospace"
+                    android:text="@string/bt3"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="25%"
+                    app:layout_heightPercent="12%"
+                    android:id="@+id/Button_back"
+                    android:layout_below="@id/input"
+                    android:layout_toRightOf="@id/Button_mul"
+                    android:textSize="30dp"
+                    android:background="@drawable/button_shape2"
+                    android:text="@string/bt4"/>
+
+                <Button
+                    android:id="@+id/Button_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Button_C"
+                    android:background="@drawable/button_shape0"
+                    android:text="@string/bt5"
+                    android:textSize="30dp"
+                    android:textColor="#4b214b"
+                    android:typeface="monospace"
+                    app:layout_heightPercent="12%"
+                    app:layout_widthPercent="25%" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="25%"
+                    app:layout_heightPercent="12%"
+                    android:background="@drawable/button_shape0"
+                    android:id="@+id/Button_8"
+                    android:layout_below="@id/Button_div"
+                    android:textSize="30dp"
+                    android:layout_toRightOf="@id/Button_7"
+                    android:textColor="#4b214b"
+                    android:typeface="monospace"
+                    android:text="@string/bt6"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="25%"
+                    app:layout_heightPercent="12%"
+                    android:id="@+id/Button_9"
+                    android:background="@drawable/button_shape0"
+                    android:layout_below="@id/Button_mul"
+                    android:layout_toRightOf="@id/Button_8"
+                    android:textSize="30dp"
+                    android:textColor="#4b214b"
+                    android:typeface="monospace"
+                    android:text="@string/bt7"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="25%"
+                    app:layout_heightPercent="12%"
+                    android:id="@+id/Button_sub"
+                    android:layout_below="@id/Button_back"
+                    android:textSize="30dp"
+                    android:layout_toRightOf="@id/Button_9"
+                    android:background="@drawable/button_shape2"
+                    android:textColor="#4b214b"
+                    android:typeface="monospace"
+                    android:text="@string/bt8"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="25%"
+                    app:layout_heightPercent="12%"
+                    android:id="@+id/Button_4"
+                    android:layout_below="@id/Button_7"
+                    android:background="@drawable/button_shape0"
+                    android:textSize="30dp"
+                    android:textColor="#4b214b"
+                    android:typeface="monospace"
+                    android:text="@string/bt9"/>
+
+                <Button
+                    android:id="@+id/Button_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Button_8"
+                    android:layout_toRightOf="@id/Button_4"
+                    android:textSize="30dp"
+                    android:textColor="#4b214b"
+                    android:typeface="monospace"
+                    android:background="@drawable/button_shape0"
+                    android:text="@string/bt10"
+                    app:layout_heightPercent="12%"
+                    app:layout_widthPercent="25%" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="25%"
+                    app:layout_heightPercent="12%"
+                    android:id="@+id/Button_6"
+                    android:layout_below="@id/Button_9"
+                    android:layout_toRightOf="@id/Button_5"
+                    android:textSize="30dp"
+                    android:textColor="#4b214b"
+                    android:background="@drawable/button_shape0"
+                    android:typeface="monospace"
+                    android:text="@string/bt11"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="25%"
+                    app:layout_heightPercent="12%"
+                    android:id="@+id/Button_add"
+                    android:background="@drawable/button_shape2"
+                    android:textSize="30dp"
+                    android:textColor="#4b214b"
+                    android:typeface="monospace"
+                    android:layout_below="@id/Button_sub"
+                    android:layout_toRightOf="@id/Button_6"
+                    android:text="@string/bt12"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="25%"
+                    app:layout_heightPercent="12%"
+                    android:id="@+id/Button_1"
+                    android:layout_below="@id/Button_4"
+                    android:textSize="30dp"
+                    android:textColor="#4b214b"
+                    android:typeface="monospace"
+                    android:background="@drawable/button_shape0"
+                    android:text="@string/bt13"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="25%"
+                    app:layout_heightPercent="12%"
+                    android:id="@+id/Button_2"
+                    android:layout_below="@id/Button_5"
+                    android:layout_toRightOf="@id/Button_1"
+                    android:background="@drawable/button_shape0"
+                    android:text="@string/bt14"
+                    android:textSize="30dp"
+                    android:textColor="#4b214b"
+                    android:typeface="monospace"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="25%"
+                    app:layout_heightPercent="12%"
+                    android:id="@+id/Button_3"
+                    android:layout_below="@id/Button_6"
+                    android:layout_toRightOf="@id/Button_2"
+                    android:textSize="30dp"
+                    android:textColor="#4b214b"
+                    android:typeface="monospace"
+                    android:background="@drawable/button_shape0"
+                    android:text="@string/bt15"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="25%"
+                    app:layout_heightPercent="24%"
+                    android:id="@+id/Button_equal"
+                    android:layout_below="@id/Button_add"
+                    android:layout_toRightOf="@id/Button_3"
+                    android:background="@drawable/button_shape3"
+                    android:textSize="30dp"
+                    android:textColor="#4b214b"
+                    android:typeface="monospace"
+                    android:text="@string/bt16"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="25%"
+                    app:layout_heightPercent="12%"
+                    android:id="@+id/Button_per"
+                    android:layout_below="@id/Button_1"
+                    android:background="@drawable/button_shape1"
+                    android:textSize="30dp"
+                    android:textColor="#4b214b"
+                    android:typeface="monospace"
+                    android:text="@string/bt17"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="25%"
+                    app:layout_heightPercent="12%"
+                    android:id="@+id/Button_0"
+                    android:background="@drawable/button_shape0"
+                    android:layout_below="@id/Button_2"
+                    android:layout_toRightOf="@id/Button_per"
+                    android:textSize="30dp"
+                    android:textColor="#4b214b"
+                    android:typeface="monospace"
+                    android:text="@string/bt18"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="25%"
+                    app:layout_heightPercent="12%"
+                    android:id="@+id/Button_poi"
+                    android:layout_below="@id/Button_3"
+                    android:layout_toRightOf="@id/Button_0"
+                    android:background="@drawable/button_shape1"
+                    android:textSize="30dp"
+                    android:textColor="#4b214b"
+                    android:typeface="monospace"
+                    android:text="@string/bt19"/>
+
+            </androidx.percentlayout.widget.PercentRelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+

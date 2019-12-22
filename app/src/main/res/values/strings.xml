@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">My Calculator</string>
+    <string name="back">Back</string>
+    <string name="title_text">Title Text</string>
+    <string name="bt1">CE</string>
+    <string name="bt2">÷</string>
+    <string name="bt3">×</string>
+    <string name="bt4">Back</string>
+    <string name="bt5">7</string>
+    <string name="bt6">8</string>
+    <string name="bt7">9</string>
+    <string name="bt8">-</string>
+    <string name="bt9">4</string>
+    <string name="bt10">5</string>
+    <string name="bt11">6</string>
+    <string name="bt12">+</string>
+    <string name="bt13">1</string>
+    <string name="bt14">2</string>
+    <string name="bt15">3</string>
+    <string name="bt16">=</string>
+    <string name="bt17">%</string>
+    <string name="bt18">0</string>
+    <string name="bt19">.</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">移动应用开发实践</string>
+    <string name="nav_header_subtitle">计算机学院 软工1703 杨玥 2017011220</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_length_trans">长度换算</string>
+    <string name="menu_volumn_trans">体积换算</string>
+    <string name="menu_area_trans">面积换算</string>
+    <string name="menu_jinzhi_trans">进制转换</string>
+    <string name="menu_weight_trans">重量转换</string>
+    <string name="menu_rate">实时汇率</string>
+    <string name="menu_date">日期计算</string>
+    <string name="menu_history">计算历史</string>
+
+
+</resources>

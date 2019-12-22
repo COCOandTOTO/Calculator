@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1">
+        <include layout="@layout/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9">
+        <androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignWithParentIfMissing="true"
+            android:background="#ffffff"
+            >
+            <TextView
+                app:layout_widthPercent="100%"
+                app:layout_heightPercent="40%"
+                android:background="#FFFFFF"
+                android:id="@+id/input"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/Button_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="12%"
+                app:layout_heightPercent="12%"
+                android:layout_below="@id/input"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="(" />
+            <Button
+                android:id="@+id/Button_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="12%"
+                app:layout_heightPercent="12%"
+                android:layout_below="@id/input"
+                android:layout_toRightOf="@id/Button_left"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text=")"/>
+            <Button
+                android:id="@+id/Button_daoshu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="12%"
+                app:layout_heightPercent="12%"
+                android:layout_below="@id/input"
+                android:layout_toRightOf="@id/Button_right"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="1/x"/>
+            <Button
+                android:id="@+id/Button_C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="16%"
+                app:layout_heightPercent="12%"
+                android:layout_below="@id/input"
+                android:layout_toRightOf="@id/Button_daoshu"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="@string/bt1"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="16%"
+                app:layout_heightPercent="12%"
+                android:layout_below="@id/input"
+                android:layout_toRightOf="@id/Button_C"
+                android:id="@+id/Button_div"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="@string/bt2" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="16%"
+                app:layout_heightPercent="12%"
+                android:id="@+id/Button_mul"
+                android:layout_below="@id/input"
+                android:layout_toRightOf="@id/Button_div"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="@string/bt3"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="16%"
+                app:layout_heightPercent="12%"
+                android:id="@+id/Button_back"
+                android:layout_below="@id/input"
+                android:layout_toRightOf="@id/Button_mul"
+                android:textSize="30dp"
+                android:background="@drawable/button_shape2"
+                android:text="@string/bt4"/>
+            <Button
+                android:id="@+id/Button_pingfang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="12%"
+                app:layout_heightPercent="12%"
+                android:layout_below="@id/Button_left"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="x²" />
+
+            <Button
+                android:id="@+id/Button_lifang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="12%"
+                app:layout_heightPercent="12%"
+                android:layout_below="@id/Button_right"
+                android:layout_toRightOf="@id/Button_pingfang"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="x³" />
+            <Button
+                android:id="@+id/Button_jiecheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="12%"
+                app:layout_heightPercent="12%"
+                android:layout_below="@id/Button_daoshu"
+                android:layout_toRightOf="@id/Button_lifang"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="x!" />
+
+            <Button
+                android:id="@+id/Button_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Button_left"
+                android:layout_toRightOf="@id/Button_jiecheng"
+                android:background="@drawable/button_shape0"
+                android:text="@string/bt5"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                app:layout_heightPercent="12%"
+                app:layout_widthPercent="16%" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="16%"
+                app:layout_heightPercent="12%"
+                android:background="@drawable/button_shape0"
+                android:id="@+id/Button_8"
+                android:layout_below="@id/Button_div"
+                android:textSize="30dp"
+                android:layout_toRightOf="@id/Button_7"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="@string/bt6"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="16%"
+                app:layout_heightPercent="12%"
+                android:id="@+id/Button_9"
+                android:background="@drawable/button_shape0"
+                android:layout_below="@id/Button_mul"
+                android:layout_toRightOf="@id/Button_8"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="@string/bt7"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="16%"
+                app:layout_heightPercent="12%"
+                android:id="@+id/Button_sub"
+                android:layout_below="@id/Button_back"
+                android:textSize="30dp"
+                android:layout_toRightOf="@id/Button_9"
+                android:background="@drawable/button_shape2"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="@string/bt8"/>
+            <Button
+                android:id="@+id/Button_genhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="12%"
+                app:layout_heightPercent="12%"
+                android:layout_below="@id/Button_pingfang"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="√" />
+            <Button
+                android:id="@+id/Button_ln"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="12%"
+                app:layout_heightPercent="12%"
+                android:layout_below="@id/Button_lifang"
+                android:layout_toRightOf="@id/Button_genhao"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="ln" />
+            <Button
+                android:id="@+id/Button_log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="12%"
+                app:layout_heightPercent="12%"
+                android:layout_below="@id/Button_jiecheng"
+                android:layout_toRightOf="@id/Button_ln"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="log" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="16%"
+                app:layout_heightPercent="12%"
+                android:id="@+id/Button_4"
+                android:layout_toRightOf="@id/Button_log"
+                android:layout_below="@id/Button_7"
+                android:background="@drawable/button_shape0"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="@string/bt9"/>
+
+            <Button
+                android:id="@+id/Button_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Button_8"
+                android:layout_toRightOf="@id/Button_4"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:background="@drawable/button_shape0"
+                android:text="@string/bt10"
+                app:layout_heightPercent="12%"
+                app:layout_widthPercent="16%" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="16%"
+                app:layout_heightPercent="12%"
+                android:id="@+id/Button_6"
+                android:layout_below="@id/Button_9"
+                android:layout_toRightOf="@id/Button_5"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:background="@drawable/button_shape0"
+                android:typeface="monospace"
+                android:text="@string/bt11"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="16%"
+                app:layout_heightPercent="12%"
+                android:id="@+id/Button_add"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:layout_below="@id/Button_sub"
+                android:layout_toRightOf="@id/Button_6"
+                android:text="@string/bt12"/>
+            <Button
+                android:id="@+id/Button_sin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="12%"
+                app:layout_heightPercent="12%"
+                android:layout_below="@id/Button_genhao"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="sin" />
+            <Button
+                android:id="@+id/Button_cos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="12%"
+                app:layout_heightPercent="12%"
+                android:layout_below="@id/Button_ln"
+                android:layout_toRightOf="@id/Button_sin"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="cos" />
+            <Button
+                android:id="@+id/Button_tan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="12%"
+                app:layout_heightPercent="12%"
+                android:layout_below="@id/Button_log"
+                android:layout_toRightOf="@id/Button_cos"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="tan" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="16%"
+                app:layout_heightPercent="12%"
+                android:id="@+id/Button_1"
+                android:layout_toRightOf="@id/Button_tan"
+                android:layout_below="@id/Button_4"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:background="@drawable/button_shape0"
+                android:text="@string/bt13"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="16%"
+                app:layout_heightPercent="12%"
+                android:id="@+id/Button_2"
+                android:layout_below="@id/Button_5"
+                android:layout_toRightOf="@id/Button_1"
+                android:background="@drawable/button_shape0"
+                android:text="@string/bt14"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="16%"
+                app:layout_heightPercent="12%"
+                android:id="@+id/Button_3"
+                android:layout_below="@id/Button_6"
+                android:layout_toRightOf="@id/Button_2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:background="@drawable/button_shape0"
+                android:text="@string/bt15"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="16%"
+                app:layout_heightPercent="24%"
+                android:id="@+id/Button_equal"
+                android:layout_below="@id/Button_add"
+                android:layout_toRightOf="@id/Button_3"
+                android:background="@drawable/button_shape3"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="@string/bt16"/>
+            <Button
+                android:id="@+id/Button_arcsin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="12%"
+                app:layout_heightPercent="12%"
+                android:layout_below="@id/Button_sin"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="arcsin" />
+            <Button
+                android:id="@+id/Button_arccos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="12%"
+                app:layout_heightPercent="12%"
+                android:layout_below="@id/Button_cos"
+                android:layout_toRightOf="@id/Button_arcsin"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="arccos" />
+            <Button
+                android:id="@+id/Button_arctan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="12%"
+                app:layout_heightPercent="12%"
+                android:layout_below="@id/Button_cos"
+                android:layout_toRightOf="@id/Button_arccos"
+                android:background="@drawable/button_shape2"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="arctan" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="16%"
+                app:layout_heightPercent="12%"
+                android:id="@+id/Button_per"
+                android:layout_below="@id/Button_1"
+                android:layout_toRightOf="@id/Button_arctan"
+                android:background="@drawable/button_shape1"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="@string/bt17"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="16%"
+                app:layout_heightPercent="12%"
+                android:id="@+id/Button_0"
+                android:background="@drawable/button_shape0"
+                android:layout_below="@id/Button_2"
+                android:layout_toRightOf="@id/Button_per"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="@string/bt18"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_widthPercent="16%"
+                app:layout_heightPercent="12%"
+                android:id="@+id/Button_poi"
+                android:layout_below="@id/Button_3"
+                android:layout_toRightOf="@id/Button_0"
+                android:background="@drawable/button_shape1"
+                android:textSize="30dp"
+                android:textColor="#4b214b"
+                android:typeface="monospace"
+                android:text="@string/bt19"/>
+
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+

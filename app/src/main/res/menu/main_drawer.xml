@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:title="换算">
+        <item
+            android:id="@+id/length_trans"
+            android:title="@string/menu_length_trans" />
+        <item
+            android:id="@+id/area_trans"
+            android:title="@string/menu_area_trans" />
+        <item
+            android:id="@+id/volumn_trans"
+            android:title="@string/menu_volumn_trans" />
+        <item
+            android:id="@+id/weight_trans"
+            android:title="@string/menu_weight_trans" />
+        <item
+            android:id="@+id/jinzhi_trans"
+            android:title="@string/menu_jinzhi_trans" />
+    </group>
+
+    <item android:title="更多">
+        <menu>
+            <item
+                android:id="@+id/rate"
+                android:title="@string/menu_rate" />
+            <item
+                android:id="@+id/date"
+                android:title="@string/menu_date" />
+            <item
+                android:id="@+id/history"
+                android:title="@string/menu_history"/>
+            <item
+                android:id="@+id/sanjiaohanshu"
+                android:title="三角函数" />
+        </menu>
+    </item>
+
+</menu>
